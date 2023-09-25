@@ -2,7 +2,7 @@ apiVersion: tekton.dev/v1beta1
 kind: PipelineRun
 metadata:
   annotations:
-    build.appstudio.openshift.io/repo: https://github.com/burrsitis/partner-catalog-custom?rev={{revision}}
+    build.appstudio.openshift.io/repo: https://github.com/alanonthegit/partner-catalog-custom?rev={{revision}}
     build.appstudio.redhat.com/commit_sha: '{{revision}}'
     build.appstudio.redhat.com/pull_request_number: '{{pull_request_number}}'
     build.appstudio.redhat.com/target_branch: '{{target_branch}}'
@@ -15,7 +15,7 @@ metadata:
     appstudio.openshift.io/component: partner-catalog-custom-g6i5
     pipelines.appstudio.openshift.io/type: build
   name: partner-catalog-custom-g6i5-on-pull-request
-  namespace: burrsitis-tenant
+  namespace: alroy-tenant
 spec:
   params:
   - name: dockerfile
