@@ -22,7 +22,7 @@ spec:
   - name: git-url
     value: '{{repo_url}}'
   - name: output-image
-    value: quay.io/redhat-user-workloads/burrsitis-tenant/partner-catalog-custom/partner-catalog-custom-g6i5:{{revision}}
+    value: quay.io/redhat-user-workloads-stage/alroy-tenant/partner-catalog-custom/partner-catalog-custom-g6i5:{{revision}}
   - name: path-context
     value: .
   - name: revision
