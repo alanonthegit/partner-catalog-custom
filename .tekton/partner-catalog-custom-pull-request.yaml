@@ -12,9 +12,9 @@ metadata:
   creationTimestamp: null
   labels:
     appstudio.openshift.io/application: partner-catalog-custom
-    appstudio.openshift.io/component: partner-catalog-custom-g6i5
+    appstudio.openshift.io/component: partner-catalog-custom
     pipelines.appstudio.openshift.io/type: build
-  name: partner-catalog-custom-g6i5-on-pull-request
+  name: partner-catalog-custom-on-pull-request
   namespace: alroy-tenant
 spec:
   params:
@@ -25,7 +25,7 @@ spec:
   - name: image-expires-after
     value: 5d
   - name: output-image
-    value: quay.io/redhat-user-workloads-stage/alroy-tenant/partner-catalog-custom/partner-catalog-custom-g6i5:{{revision}}
+    value: quay.io/redhat-user-workloads-stage/alroy-tenant/partner-catalog-custom/partner-catalog-custom:on-pr-{{revision}}
   - name: path-context
     value: .
   - name: revision
